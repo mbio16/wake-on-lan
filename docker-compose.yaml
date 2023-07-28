@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    wake_on_lan:
+        ports:
+            - '80:<port>'
+        environment:
+            - PORT=<port>
+            - LOG_LEVEL=<log_level>
+        image: 'biolekm/wake_on_lan:<version>
