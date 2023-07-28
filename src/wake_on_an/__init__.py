@@ -24,13 +24,13 @@ class WOL:
             logging.error("Mac address is not valid")
             raise Exception("Mac address is not valid")
 
-    def __set_ip(self,ip: str | None) -> str:
+    def __set_ip(self, ip: str | None) -> str:
         if ip is None:
             return "255.255.255.255"
         else:
             return ip
 
-    def __set_port(self,port: int | None) -> int:
+    def __set_port(self, port: int | None) -> int:
         if port is None:
             return 9
         else:

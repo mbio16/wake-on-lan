@@ -29,7 +29,7 @@ def default_post(request: wrappers.Request) -> wrappers.Response:
             )
         except Exception as e:
             return make_response(
-                jsonify({"error":str(e)}),
+                jsonify({"error": str(e)}),
                 403,
             )
     else:
